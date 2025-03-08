@@ -5,7 +5,6 @@ import { GaleryContent } from "@/components/gallery-content";
 import { TextContent } from "@/components/text-content";
 
 export default function Home() {
-  const 
   return (
     <>
       <section className=" w-full max-w-[900px] mx-auto px-4 flex flex-col items-center justify-center overflow-hidden">
