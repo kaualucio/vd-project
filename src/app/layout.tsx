@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
+import { FixedNavbar } from "@/components/fixed-nav-bar";
+import Aurora from "@/animations/Backgrounds/Aurora/Aurora";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lexend = Lexend({
+  variable: "--font-lexend",
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
   subsets: ["latin"],
 });
 
@@ -23,11 +21,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+        className={`${lexend.variable} antialiased bg-zinc-950`}
+      > 
+        <Aurora
+          blend={1}
+          amplitude={1}
+          speed={2}
+          colorStops={['#00a7f5','#155cfd', '#7008e7']}
+        />
+        <main className="relative overflow-x-hidden">
+          {children}
+        </main>
+        <FixedNavbar />
       </body>
     </html>
   );
