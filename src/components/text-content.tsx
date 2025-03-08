@@ -6,10 +6,10 @@ interface TextContentProps {
 
 export const TextContent = ({ content }: TextContentProps) => {
   return (
-    <div className="pt-16 pb-40 grid gap-2">
+    <div className=" pb-10 grid gap-2">
       <SplitText
         text={content}
-        className="text-xl sm:text-2xl font-thin text-center"
+        className="text-white text-lg sm:text-xl font-thin text-center"
         delay={10}
         animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
         animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}

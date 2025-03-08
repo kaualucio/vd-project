@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
-import { FixedNavbar } from "@/components/fixed-nav-bar";
+// import { FixedNavbar } from "@/components/fixed-nav-bar";
 import Aurora from "@/animations/Backgrounds/Aurora/Aurora";
+import { CustomConfettiContextProvider } from "@/context/custom-confetti-context";
+import { ConfettiButton } from "@/components/magicui/confetti";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -31,10 +33,15 @@ export default function RootLayout({
           speed={2}
           colorStops={['#00a7f5','#155cfd', '#7008e7']}
         />
-        <main className="relative overflow-x-hidden">
-          {children}
-        </main>
-        <FixedNavbar />
+        <CustomConfettiContextProvider>
+          <main className="relative overflow-x-hidden">
+            {children}
+          </main>
+        </CustomConfettiContextProvider>
+        <ConfettiButton>
+          Clique me
+        </ConfettiButton>
+        {/* <FixedNavbar /> */}
       </body>
     </html>
   );
