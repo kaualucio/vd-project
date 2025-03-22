@@ -158,7 +158,7 @@ const ConfettiButtonComponent = ({
         return clearInterval(interval);
       }
  
-      const particleCount = 100 * (timeLeft / duration);
+      const particleCount = 50 * (timeLeft / duration);
       confetti({
         ...defaults,
         particleCount,
@@ -203,7 +203,7 @@ const ConfettiButtonComponent = ({
   };
 
   return (
-    <div className="w-full fixed bottom-5">
+    <div className="">
     <StarBorder
       as="div"
       className="!block w-full max-w-fit mx-auto"
