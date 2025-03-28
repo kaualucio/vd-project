@@ -27,9 +27,8 @@ export default function Home() {
           />
         </div>
         <GaleryContent />
-        <TextContent content="Parabéns, Jeni! Feliz aniversário! Desejo tudo de bom e de melhor para você. Que seu dia seja incrível e que você aproveite da melhor forma possível com sua família e amigos. Que venham muitos anos pela frente." />
+        <TextContent content="Parabéns, Jeni! Feliz aniversário! Desejo tudo de bom e de melhor para você. Que seu dia seja incrível e que você aproveite da melhor forma possível. Que venham muitos anos pela frente com muitas conquistas incríveis. Felicidades 🥳🎉🎉" />
         <ConfettiButton/>
-
       </section>    
     </>
   );
