@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="py-10 sm:py-20 w-full max-w-[900px] mx-auto px-4 flex flex-col items-center justify-center overflow-hidden">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 z-50">
 
           <BlurText
             text="🥳🎂🎈"
@@ -23,7 +23,7 @@ export default function Home() {
             delay={150}
             animateBy="words"
             direction="bottom"
-            className="text-white items-center justify-center  z-[99] text-[40px] sm:text-5xl font-bold"
+            className=" text-white items-center justify-center  z-[99] text-[40px] sm:text-5xl font-bold"
           />
         </div>
         <GaleryContent />
