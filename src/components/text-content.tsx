@@ -6,7 +6,7 @@ interface TextContentProps {
 
 export const TextContent = ({ content }: TextContentProps) => {
   return (
-    <div className=" pb-10 grid gap-2">
+    <div className="-mt-8 pb-10 grid gap-2">
       <SplitText
         text={content}
         className="text-white text-lg sm:text-xl font-thin text-center sm:px-5 "
